@@ -2,7 +2,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 // Database paths
-const DB_DIR = path.join(__dirname, 'database');
+const DB_DIR = path.join('/tmp', 'database');
 const API_KEYS_FILE = path.join(DB_DIR, 'api_keys.json');
 
 /**
