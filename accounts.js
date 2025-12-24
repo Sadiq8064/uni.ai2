@@ -7,7 +7,7 @@ const multer = require("multer");
 const upload = multer({ storage: multer.memoryStorage() });
 const RAGService = require('./rag');
 
-const DB_DIR = path.join(__dirname, 'database');
+const DB_DIR = path.join('/tmp', 'database');
 const ACCOUNTS_DIR = path.join(DB_DIR, 'accounts');
 const UPLOADS_DIR = path.join(DB_DIR, 'uploads');
 const TICKETS_DIR = path.join(DB_DIR, 'tickets');
